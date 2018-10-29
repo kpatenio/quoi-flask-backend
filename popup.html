@@ -3,7 +3,10 @@
 <html lang="en">
   <head>
     <title> QUOI </title>
-    <link href="popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+    <!-- backup if CDN fails -->
+    <!--<link rel="stylesheet" href="line-awesome/css/line-awesome-font-awesome.min.css" type='text/css'> -->
     <meta charset="utf-8"/> <!-- Ensures we can have French characters too! -->
   </head>
 
@@ -13,11 +16,17 @@
       <p id="homepage-quote"> The extension to use when you ask yourself « Quoi ? » </p>
     </header>
 
+    <i class="la la-search"></i>
 
-    <section class="searchbar">
-      <input type="text" id="searchInput" placeholder="Cherchez un mot"/>
-      <input type="submit" id="searchSubmit" value="Search"/>
-    </section>
+
+    <div class="searchbar">
+      <form class="example">
+      <input type="text" id="search-input" placeholder="Cherchez un mot"/>
+      <!-- Must use fa NOT la - does not work with Line awesome for some reason -->
+      <!-- TODO - find better way to position button and searchbar -->
+      <button type ="submit" id="search-button"><i class="fa fa-search"></i></button>
+    </form>
+    </div>
   </body>
 
 </html>

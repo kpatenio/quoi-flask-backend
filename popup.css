@@ -1,8 +1,18 @@
 body{
-  min-width: 250px;
-  min-height: 200px;
+  min-width: 200px;
+  min-height: 150px;
   margin: auto;
   padding: auto;
+}
+
+#homepage-title{
+  margin: auto;
+  padding: auto;
+  border-bottom: black solid 2px;
+  border-top: black solid 2px;
+  text-align: center;
+  font-size: 250%;
+  background-color: #67AB9F;
 }
 
 #homepage-quote{
@@ -15,12 +25,20 @@ body{
   font-size: 110%;
 }
 
-#homepage-title{
-  margin: auto;
-  padding: auto;
-  border-bottom: black solid 2px;
-  border-top: black solid 2px;
-  text-align: center;
-  font-size: 250%;
-  background-color: #67AB9F;
+.searchbar input[type=text]{
+  margin-left: 5%;
+  margin-top: 15%;
+  border: black solid 1px;
+  border-radius: 5%;
+  width: 75%;
+}
+
+.searchbar #search-button{
+  float: right;
+  font-size: 150%;
+  background-color: Transparent;
+  border: none;
+  outline: none;
+      margin-top: 14%;
+      margin-right: 4%;
 }

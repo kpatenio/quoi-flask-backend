@@ -7,3 +7,6 @@ chrome.runtime.onInstalled.addListener(function(){
   // TODO: set up context menus following this example from Google:
   // https://github.com/GoogleChrome/chrome-app-samples/blob/master/samples/context-menu/main.js
 });
+
+
+// TODO: use set popup : https://stackoverflow.com/a/29415742

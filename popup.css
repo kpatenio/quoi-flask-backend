@@ -1,5 +1,26 @@
 body{
-  color: red;
-  min-width: 300px;
+  min-width: 250px;
   min-height: 200px;
+  margin: auto;
+  padding: auto;
+}
+
+#homepage-quote{
+  margin: auto;
+  text-align: center;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-style: italic;
+  font-size: 110%;
+}
+
+#homepage-title{
+  margin: auto;
+  padding: auto;
+  border-bottom: black solid 2px;
+  border-top: black solid 2px;
+  text-align: center;
+  font-size: 250%;
+  background-color: #67AB9F;
 }

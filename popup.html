@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <title> QUOI </title>
     <link href="popup.css" rel="stylesheet">
+    <meta charset="utf-8"/> <!-- Ensures we can have French characters too! -->
   </head>
 
   <body>
-    <h1> QUOI </h1>
-    <h2> Available Dictionaries </h2>
+    <header>
+      <h1 id="homepage-title"> QUOI </h1>
+      <p id="homepage-quote"> The extension to use when you ask yourself « Quoi ? » </p>
+    </header>
 
-    <input type="text" id="searchInput"/>
-    <input type="submit" id="searchSubmit" value="Cherchez un mot"/>
+
+    <section class="searchbar">
+      <input type="text" id="searchInput" placeholder="Cherchez un mot"/>
+      <input type="submit" id="searchSubmit" value="Search"/>
+    </section>
   </body>
 
 </html>

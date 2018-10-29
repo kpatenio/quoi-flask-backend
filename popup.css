@@ -1,3 +1,5 @@
 body{
   color: red;
+  min-width: 300px;
+  min-height: 200px;
 }

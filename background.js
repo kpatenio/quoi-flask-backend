@@ -43,7 +43,7 @@ chrome.contextMenus.onClicked.addListener(function(clicked){
   }
 
   // else anywhere on the page
-  else if (clicked.menuItemId == "QUOI_widget" && clicked.selectionText) {
+  else if (clicked.menuItemId == contextId) {
     chrome.windows.create ({
       url : "popup.html",
       focused : false,

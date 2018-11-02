@@ -40,6 +40,11 @@ chrome.contextMenus.onClicked.addListener(function(clicked){
       width: 400,
       type : "popup"
     });
+
+    // $.get('https://glosbe.com/gapi/translate?from=eng&dest=fra&format=jsonp&phrase=what&pretty=true', function(response){
+    //   console.log(response);
+    // });
+
   }
 
   // else anywhere on the page

@@ -32,7 +32,7 @@ chrome.contextMenus.onClicked.addListener(function(clicked){
   // if highlighted a word
   if (clicked.menuItemId == contextId && clicked.selectionText){
     chrome.windows.create ({
-      url : "popup.html",
+      url : "definitions.html",
       focused : false,
       top: 200,
       left: 700,
@@ -41,11 +41,16 @@ chrome.contextMenus.onClicked.addListener(function(clicked){
       type : "popup"
     });
 
-    // $.get('https://glosbe.com/gapi/translate?from=eng&dest=fra&format=jsonp&phrase=what&pretty=true', function(response){
+    // $.post('translate.yandex.net/api/v1.5/tr/getLangs?ui=en&key=trnsl.1.1.20181103T011505Z.a63896cc58809a9d.c30e5ab4e6ddf3b30c3897adb8d9675157d90a07', function(response){
     //   console.log(response);
     // });
-
   }
+
+
+  //POST /api/v1.5/tr/getLangs?ui=en&key=API-KEY HTTP/1.1
+//Host: translate.yandex.net
+//Accept: */*
+//Content-Type: application/x-www-form-urlencoded*/
 
   // else anywhere on the page
   else if (clicked.menuItemId == contextId) {

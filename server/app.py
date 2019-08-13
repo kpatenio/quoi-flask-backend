@@ -10,7 +10,7 @@ see: https://2.python-requests.org/en/master/user/quickstart
 import requests
 
 app = Flask(__name__) # TODO - Flask(__name__, static_folder=path, template_folder=path)
-CORS(app)
+CORS(app) # enables CORS for the flask server. see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 
 constants = server.constants
 

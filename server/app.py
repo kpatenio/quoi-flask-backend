@@ -1,5 +1,6 @@
 from flask import Flask
-import constants
+from flask_cors import CORS
+import server.constants
 
 ''' 
 python library for making http requests
@@ -9,6 +10,9 @@ see: https://2.python-requests.org/en/master/user/quickstart
 import requests
 
 app = Flask(__name__) # TODO - Flask(__name__, static_folder=path, template_folder=path)
+CORS(app)
+
+constants = server.constants
 
 @app.route('/')
 def index():
@@ -25,8 +29,8 @@ dict_code = 'english-french'
 def get_search_term(word):
     response = requests.get(constants.URL + 'dictionaries/' + dict_code + '/search/?q=' + word + '&pageSize=1', headers=constants.HEADERS)
     # return(str(constants.URL + 'dictionaries/' + dict_code + '/search/?q=' + word))
+    # return response.json()
     return response.json()
-
 # TODO
 # def get_entry_id
 

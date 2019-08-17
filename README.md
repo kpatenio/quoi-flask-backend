@@ -10,4 +10,4 @@ For more information about this project's history and/or progress, see the wiki 
 Currently, no venv has been set up. The temporary workaround is to use PyCharm to run the app.
 
 ## Server
-Considering the app is not yet deployed, the server will be hosted at `http://127.0.0.1:5000/` for the time being.
+Considering the app is not yet deployed, the server will be hosted manually at `http://127.0.0.1:5000/` for the time being.

@@ -1,5 +1,5 @@
 # QUOI
-The Python Flask backend of QUOI.
+The app to use when ask yourself « Quoi  » !
 
 ## About
 This Flask app utilizes the [Collins Dictionary API](https://www.collinsdictionary.com/api/) to retrieve information from the Collins server via HTTP calls. Once the API call is made, the app returns this information to the [frontend React app](https://github.com/kpatenio/quoi-react-app).

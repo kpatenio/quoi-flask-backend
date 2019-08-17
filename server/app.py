@@ -1,18 +1,17 @@
 from flask import Flask
 from flask_cors import CORS
-import server.constants
-
+import constants
 ''' 
 python library for making http requests
 see: https://realpython.com/python-requests/#getting-started-with-requests
 see: https://2.python-requests.org/en/master/user/quickstart
+
+Note: this is different from Flask's request object - which is used for reading responses sent to the server!
 '''
 import requests
 
 app = Flask(__name__) # TODO - Flask(__name__, static_folder=path, template_folder=path)
 CORS(app) # enables CORS for the flask server. see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-
-constants = server.constants
 
 @app.route('/')
 def index():

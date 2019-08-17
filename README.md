@@ -7,7 +7,7 @@ This Flask app utilizes the [Collins Dictionary API](https://www.collinsdictiona
 For more information about this project's history and/or progress, see the wiki [here](https://github.com/kpatenio/QUOI/wiki).
 
 ## Starting Flask
-Currently, no venv has been set up. The temporary workaround is use PyCharm to run the app.
+Currently, no venv has been set up. The temporary workaround is to use PyCharm to run the app.
 
 ## Server
 Considering the app is not yet deployed, the server will be hosted at `http://127.0.0.1:5000/` for the time being.

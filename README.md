@@ -6,8 +6,17 @@ This Flask app utilizes the [Collins Dictionary API](https://www.collinsdictiona
 
 For more information about this project's history and/or progress, see the wiki [here](https://github.com/kpatenio/QUOI/wiki).
 
-## Starting Flask
-Currently, no venv has been set up. The temporary workaround is to use PyCharm to run the app.
+## Running the Server
+At the moment, the server can only be run using `python`. Note that using `flask run` does not currently work.
 
-## Server
-Considering the app is not yet deployed, the server will be hosted manually at `http://127.0.0.1:5000/` for the time being.
+If you are using Windows (Python 3):
+```
+py -3 app.py
+```
+
+If you are using unix (Python 3):
+```
+python3 app.py
+```
+
+Considering that the app is not yet deployed, the server will temporarily be hosted manually at `http://127.0.0.1:5000/`. This means that `quoi-react-app` is heavily dependent on this app being run at localhost.

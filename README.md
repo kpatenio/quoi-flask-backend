@@ -61,6 +61,9 @@ source <name of your venv>/bin/activate
 deactivate
 ```
 
+### Docker
+Using Docker would be the preferred way to containerize this app, serving as a better alternative to `venv`s. However, I currently do not have Docker setup. This section is in my TODO list!
+
 ## Running the Server
 At the moment, the server can only be run by executing the `app.py` file with your Python interpreter. Note that using `flask run` does not currently work!
 

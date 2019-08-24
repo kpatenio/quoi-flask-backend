@@ -14,8 +14,10 @@ Virtual environments are set up on my local computer, each with different module
 
 Note that `Python 3.7` is needed in order to utilize this version's [Data Class feature](https://docs.python.org/3/library/dataclasses.html).
 
-### Using `venv`(s)
+### Using virtual environments
 Optionally, you may create your own virtual environments. This is recommended if you want to isolate this app's Python packages from your own. You will need to install the required packages (via `pip 3` or `pip3.7`) within a `venv` in order to run the app locally! [The official documentation (Python 3.7)](https://docs.python.org/3/library/venv.html) is your best resource.
+
+I use `venv`, which is officially supported and found in Python 3.6 and Python 3.7 standard libraries. Thus, for the rest of this README, I will refer to `venv`. You are free to use other libraries such as `virtualenv` and`pipenv`. ([Don't know the difference? Look at this cool SO answer here!](https://stackoverflow.com/a/41573588))
 
 **Commands found in this section will only work if you are using Linux (Ubuntu) and `apt`)**.
 

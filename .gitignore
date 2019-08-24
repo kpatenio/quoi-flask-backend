@@ -1,0 +1,6 @@
+# custom venvs
+py3.6-venv
+py3.7-venv
+
+# Python
+__pycache__

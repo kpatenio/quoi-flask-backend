@@ -15,7 +15,7 @@ Virtual environments are set up on my local computer, each with different module
 Note that `Python 3.7` is needed in order to utilize this version's [Data Class feature](https://docs.python.org/3/library/dataclasses.html).
 
 ### Using `venv`(s)
-Optionally, you may create your own virtual environments. This is recommended if you want to isolate this app's Python packages from your own. [The official documentation (Python 3.7)](https://docs.python.org/3/library/venv.html) is your best resource.
+Optionally, you may create your own virtual environments. This is recommended if you want to isolate this app's Python packages from your own. You will need to install the required packages (via `pip 3` or `pip3.7`) within a `venv` in order to run the app locally! [The official documentation (Python 3.7)](https://docs.python.org/3/library/venv.html) is your best resource.
 
 **Commands found in this section will only work if you are using Linux (Ubuntu) and `apt`)**.
 
@@ -75,6 +75,8 @@ If you are using unix:
 python app.py
 ```
 
+Note: if you wish to use a `venv`, make sure you activate it first before running the commands above!
+
 ### Setup with multiple versions of Python installed
 If you are using Windows:
 ```
@@ -85,6 +87,7 @@ If you are using unix:
 ```
 python3.7 app.py
 ```
+Note: if you wish to use a `venv`, make sure you activate it first before running the commands above!
 
 ### Localhost
 Considering that the app is not yet deployed, the server will temporarily be hosted manually at `http://127.0.0.1:5000/`. This means that `quoi-react-app` is heavily dependent on this app being run at localhost.

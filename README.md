@@ -20,7 +20,6 @@ Optionally, you may create your own virtual environments. This is recommended if
 **Commands found in this section will only work if you are using Linux (Ubuntu) and `apt`)**.
 
 #### Downloading `venv`s
-Requirements:
 `Python 3.x` usually comes with `venv` support. However, if you are unable to use and create `venv`s for some reason, you may need to install `venv` packages separately.
 
 If you only have Python 3.7 installed:
@@ -34,7 +33,7 @@ sudo apt install python3.7-venv
 ```
 
 #### Creating `venv`s
-Note that newly created `venv`s will be created at the current path you are at.
+Note that newly created `venv`s will be created at the current path you are in.
 
 If you only have Python 3.7 installed:
 ```

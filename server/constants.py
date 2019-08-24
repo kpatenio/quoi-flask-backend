@@ -1,10 +1,9 @@
-# This file contains constants to be used by helper functions calling Collins API
+import os
+
 URL = 'https://api.collinsdictionary.com/api/v1/'
-HOST = 'api.collinsdictionary.com'
-ACCESS_KEY = 'bEbubPMmAVlNHJZMaUnrMRwUGHsOis2MUxBzPLUgWiHrrhzYaO1itOnvwZceAMUs'
-ACCEPT = 'application/json'
+
 HEADERS = {
-    'Host': HOST,
-    'Accept': ACCEPT,
-    'accessKey': ACCESS_KEY
+    'Host': 'api.collinsdictionary.com',
+    'Accept': 'application/json',
+    'accessKey': os.environ['ACCESS_KEY']
 }

@@ -1,6 +1,6 @@
 import os
 
-URL = 'https://api.collinsdictionary.com/api/v1/'
+URL = 'https://api.collinsdictionary.com/api/v1/dictionaries/'
 
 HEADERS = {
     'Host': 'api.collinsdictionary.com',

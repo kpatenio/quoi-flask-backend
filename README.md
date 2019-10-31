@@ -24,15 +24,18 @@ I use `venv`, which is officially supported and found in Python 3.6 and Python 3
 **Commands found in this section will only work if you are using Linux (Ubuntu) and `apt`)**.
 
 #### Downloading `venv`s
-`Python 3.x` usually comes with `venv` support. However, if you are unable to use and create `venv`s for some reason, you may need to install `venv` packages separately.
+`Python 3.3+` usually comes with `venv` support. However, if you are unable to use and create `venv`s for some reason (ex. your Linux distro does not have this by default), you may need to install `venv` packages separately.
 
-(Ubuntu) If you only have Python 3.7 installed:
+If you only have Python 3.3+ installed:
 ```
+# You can run this in ubuntu
 sudo apt install python3-venv
 ```
 
 If you have multiple versions of Python already installed, you will need to specify a version explicitly:
 ```
+# You can run this in ubuntu
+# This is an example for python 3.7
 sudo apt install python3.7-venv
 ```
 
@@ -71,7 +74,7 @@ Using Docker would be the preferred way to containerize this app, serving as a b
 ## Running the Server
 At the moment, the server can only be run by executing the `app.py` file with your Python interpreter. Note that using `flask run` does not currently work!
 
-### Setup with only Python 3.7 installed
+### Setup with only Python 3.x installed
 If you are using Windows:
 ```
 py app.py
@@ -87,11 +90,13 @@ Note: if you wish to use a `venv`, make sure you activate it first before runnin
 ### Setup with multiple versions of Python installed
 If you are using Windows:
 ```
+# If using python 3.7
 py -3.7 app.py
 ```
 
 If you are using unix:
 ```
+# If using python 3.7
 python3.7 app.py
 ```
 Note: if you wish to use a `venv`, make sure you activate it first before running the commands above!

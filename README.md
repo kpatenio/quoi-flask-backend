@@ -7,12 +7,14 @@ This Flask app utilizes the [Collins Dictionary API](https://www.collinsdictiona
 For more information about this project's history and/or progress, see the wiki [here](https://github.com/kpatenio/QUOI/wiki).
 
 ## Requirements
-Virtual environments are set up on my local computer, each with different modules installed via `pip`. To run the server on your own local environment, you must have the following:
-- `Python 3.7`
+Python `3.6` or later is required to run this app. The file `requirements.txt` contains all Python modules that must be installed via `pip`. To install all these dependencies, run:
+```
+pip install -r requirements.txt
+```
+The following modules will be found within this file:
 - `Flask (>= 1.1.1)`
 - `Flask-Cors (>= 3.0.8)`
-
-Note that `Python 3.7` is needed in order to utilize this version's [Data Class feature](https://docs.python.org/3/library/dataclasses.html).
+- `requests (latest version)`
 
 ### Using virtual environments
 Optionally, you may create your own virtual environments. This is recommended if you want to isolate this app's Python packages from your own. You will need to install the required packages (via `pip 3` or `pip3.7`) within a `venv` in order to run the app locally! [The official documentation (Python 3.7)](https://docs.python.org/3/library/venv.html) is your best resource.
@@ -24,7 +26,7 @@ I use `venv`, which is officially supported and found in Python 3.6 and Python 3
 #### Downloading `venv`s
 `Python 3.x` usually comes with `venv` support. However, if you are unable to use and create `venv`s for some reason, you may need to install `venv` packages separately.
 
-If you only have Python 3.7 installed:
+(Ubuntu) If you only have Python 3.7 installed:
 ```
 sudo apt install python3-venv
 ```
@@ -37,12 +39,12 @@ sudo apt install python3.7-venv
 #### Creating `venv`s
 Note that newly created `venv`s will be created at the current path you are in.
 
-If you only have Python 3.7 installed:
+If you only have Python 3.3+ installed:
 ```
 python3 -m venv <pick a name for your venv>
 ```
 
-If you have multiple versions of Python already installed, you will need to specify a version explicitly:
+If you have multiple versions of Python already installed, you will need to specify a version explicitly. For example:
 ```
 python3.7 -m venv <pick a name for your venv>
 ```
@@ -96,3 +98,11 @@ Note: if you wish to use a `venv`, make sure you activate it first before runnin
 
 ### Localhost
 Considering that the app is not yet deployed, the server will temporarily be hosted manually at `http://127.0.0.1:5000/`. This means that `quoi-react-app` is heavily dependent on this app being run at localhost.
+
+### API Key
+An access key is needed to use the Collins Dictionary API. For the time being, the only way to use the API key is to run the following:
+```
+export ACCESS_KEY=<access_key>
+```
+
+This might need to be run everytime a new session is created. This is a temporary workaround.

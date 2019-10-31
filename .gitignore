@@ -1,5 +1,6 @@
 # custom venvs
 *-venv
+*venv
 
 # Python
 __pycache__
@@ -9,3 +10,6 @@ __pycache__
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# MacOS
+.DS_Store
